@@ -8,15 +8,14 @@ def main():
     char_list.sort(reverse=True, key=sort_on)
     
     print(f"""--- Begin report of books/frankenstein.txt ---
-          
-{num_words} words found in the document
-""")
+    {num_words} words found in the document
+    """)
     
     for char_dict in char_list:
           print(f"The '{char_dict['name']}' character was found {char_dict['num']} times")
     
     print("""
---- End report ---""")
+    --- End report ---""")
 
 def get_num_words(text):
     words = text.split()
