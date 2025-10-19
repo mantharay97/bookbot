@@ -1,8 +1,11 @@
-def main():
+# python
+def get_book_text(filepath):
+    with open(filepath) as f:
+        return f.read()
 
-    def get_book_text():
-        with open("/home/mantharay/workspace/github.com/mantharay97/bookbot/books/frankenstein.txt") as f:
-            file_contents = f.read()
-        return file_contents
-    
-main()		
+def main():
+    text = get_book_text("books/frankenstein.txt")
+    print(text)
+
+if __name__ == "__main__":
+    main()
